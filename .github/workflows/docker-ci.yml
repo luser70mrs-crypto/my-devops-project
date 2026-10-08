@@ -12,5 +12,5 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Build Docker image
-        run: docker build --progress=plain -t real-devops-lab-app .
+        run: docker build --progress=plain -t real-devops-lab-app ./INCIDENT001
 
