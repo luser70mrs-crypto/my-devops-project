@@ -1,0 +1,18 @@
+```yaml
+name: Self-Hosted Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify-runner:
+    runs-on: self-hosted
+
+    steps:
+      - name: Identify runner
+        run: |
+          echo "Hello from my self-hosted runner!"
+          hostname
+          cat /etc/os-release
+          whoami
+```
